@@ -1,0 +1,255 @@
+
+/* nav bar */
+.navbar.bg-dark{
+    background-color: black !important;
+}
+.navbar-brand{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gold;
+    letter-spacing: 3px;
+    margin-left: 50px;
+}
+.navbar-brand:hover{
+    color: #0D6EFD;
+    border-bottom: 1px solid gold;
+    margin-left: 45px;
+}
+.navbar ul li a:hover{
+    border: 2px solid gold;
+}
+
+.navbar ul li a{
+    text-transform: uppercase;
+    color: white !important;
+    font-size: 14px;
+    display: inline-block;
+}
+.navbar ul li a.active{
+    color: gold !important;
+    border-bottom: 1px solid gold;
+}
+
+.navbar ul li.dropdown ul li a{
+    color: black !important;
+}
+.navbar ul li.dropdown ul li a:hover{
+    border: none;
+    background-color: gray;
+    color: black;
+}
+
+
+/* fin */
+/* banner */
+.banner{
+    background-color: black;
+
+}
+.banner-img{
+    background: url(../images/back_profil.png) no-repeat center/contain;
+}
+.banner .overlay{
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+.banner .overlay h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+/* fin */
+/* services */
+
+#services h3, #services p{
+    text-align: center;
+}
+#services h3:first-child{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold; 
+}
+#services .trait{
+    height: 4px;
+    width: 30px;
+    background-color: #0D6EFD;
+    margin: 0 auto 20px;
+}
+#services .bi{
+    font-size: 50px;
+    font-weight: bolder;
+}
+#services .icon-boite{
+    height: 110px;
+    width: 110px;
+    border-radius: 100%;
+    border: 10px solid #0D6EFD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#services .icon-boite:hover{
+    background-color: #0D6EFD;
+    color: white;
+    border:  10px solid #c1D2ec;
+}
+
+/* work */
+#work{
+    background: url(../images/post-3.jpg) no-repeat center/cover fixed;
+    margin: 60px 0;
+    padding: 0;
+}
+#work .overlay{
+    height: 400px;
+    background-color: #0D6EFDCD;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+#work .bi{
+    font-size: 50px;
+    font-weight: bolder;
+}
+#work .icon-boite{
+    height: 110px;
+    width: 110px;
+    border-radius: 100%;
+    border: 10px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* portfolio */
+
+
+#portfolio .bi-plus-circle{
+    color: #0D6EFD;
+    font-size: 40px;
+}
+#portfolio h3, #portfolio p{
+    text-align: center;
+}
+#portfolio .card h5, #portfolio .card p{
+    text-align: left;
+}
+#portfolio h3{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold; 
+}
+#portfolio .trait{
+    height: 4px;
+    width: 30px;
+    background-color: #0D6EFD;
+    margin: 0 auto 20px;
+}
+/* profile */
+#profile{
+    background: url(../images/work-5.jpg), no-repeat center/cover fixed;
+    margin: 60px 0;
+    padding: 0;
+}
+#profile .overlay{
+    height: 600px;
+    background-color: #0D6EFDCD;
+    color: white;
+}
+#profile img{
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+#profile button{
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+/* blog */
+#blog h2, #blog p{
+    text-align: center;
+}
+#blog h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+#blog .profile{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    object-fit: contain; 
+}
+#blog h4 span.title{
+    font-size: 14px;
+}
+#blog h4 span.time
+{
+    font-size: 14px;
+}
+#blog .card-body p
+{
+    text-align: left;
+}
+#blog h3{
+    padding: 4px 10px;
+    background-color: #0D6EFD;
+    bottom: -15%;
+    left: 30%;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+/* partie mobile responsive design */
+@media (max-width: 513px) {
+    /* navbar */
+    .navbar ul{
+        padding-left: 50px;
+        background-color: white !important;
+    }
+    .navbar ul li a{
+        color: black !important;
+    }
+    .navbar ul li a.active{
+        color: #0D6EFD !important;
+        border-bottom: 1px solid #0D6EFD;
+    }
+    .navbar ul li a:hover{
+        color: #0D6EFD !important;
+        border: none;
+        border-bottom: 2px solid #0D6EFD;
+    }
+    /* banner */
+    .banner .overlay{
+        height: 350px;
+    }
+    .banner-img{
+        background: url(../images/back_profil.png) no-repeat center/cover;
+    }
+    .banner .overlay h3{
+        font-size: 35px;
+    }
+    /* work */
+    #work .overlay{
+        height: inherit;
+       
+    }
+    /* blog */
+    #blog h3{
+        bottom: -7%;
+        left: 40%;
+    }
+    
+}
